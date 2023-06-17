@@ -74,6 +74,7 @@ function ocultarCarrito(){
         produ.style.width = '100%';
     }
 }
+//suma la cantidad de productos
 function sumarCantidad(event){
     var buttonClicked = event.target;
     var selector = buttonClicked.parentElement;
@@ -84,7 +85,7 @@ function sumarCantidad(event){
 
     actualizarTotal();
 }
-
+//resta la cantidad de productos
 function restarCantidad(event){
     var buttonClicked = event.target;
     var selector = buttonClicked.parentElement;
@@ -97,6 +98,7 @@ function restarCantidad(event){
     actualizarTotal();
     }
 }
+//funcion de agregar ak carrito
 function agregarAlCarritoClicked(event){
     var button = event.target;
     var prod = button.parentElement;
